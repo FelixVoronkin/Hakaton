@@ -74,7 +74,7 @@ th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08
 display: none;
 }
 
-/* --- КОМПАКТНЫЕ МОБИЛЬНЫЕ СТИЛИ (MOBILE FIRST / MAX-WIDTH) --- */
+/* --- УЛЬТРАКОМПАКТНЫЕ МОБИЛЬНЫЕ СТИЛИ --- */
 
 @media (max-width: 1120px) {
 .hero-card,
@@ -94,148 +94,175 @@ grid-template-columns: 1fr;
 }
 
 @media (max-width: 760px) {
-/* Уменьшаем общие отступы страницы */
-.topbar,
-.layout {
-padding-left: 10px;
-padding-right: 10px;
-}
-
-.topbar {
-padding-top: 14px;
-padding-bottom: 10px;
-}
-
-.topbar > div {
-gap: 10px;
-}
-
-/* Компактный логотип */
-.brand-mark {
-width: 38px;
-height: 38px;
-border-radius: 12px;
-font-size: 14px;
-}
-
-/* Компактная кнопка переключения темы */
-.theme-toggle {
-width: 38px;
-height: 38px;
-border-radius: 12px;
-}
-
-/* Уменьшаем шрифты заголовков */
-h1 {
-font-size: 18px;
-}
-
-h2 {
-font-size: 20px;
-}
-
-.eyebrow {
-font-size: 10px;
-margin-bottom: 2px;
-}
-
-/* Компактные контейнеры-карточки */
-.panel,
-.hero-card,
-.filters-panel {
-padding: 12px;
-border-radius: 14px;
-gap: 14px;
-}
-
-/* Карточки метрик */
-.metric-card {
-padding: 12px;
-border-radius: 14px;
-gap: 6px;
-}
-
-.metric-card strong {
-font-size: 20px;
-}
-
-.metric-card span {
-font-size: 11px;
-}
-
-/* Поля ввода и элементы управления */
-.field {
-gap: 4px;
-}
-
-.field label {
-font-size: 11px;
-}
-
-input, select, textarea {
-padding: 9px 10px;
-border-radius: 10px;
+body {
 font-size: 13px;
 }
 
-/* Кнопки */
+.topbar,
+.layout {
+padding-left: 8px;
+padding-right: 8px;
+gap: 10px;
+}
+
+.topbar {
+padding-top: 10px;
+padding-bottom: 8px;
+}
+
+.topbar > div {
+gap: 8px;
+}
+
+.brand-mark {
+width: 32px;
+height: 32px;
+border-radius: 10px;
+font-size: 12px;
+}
+
+.theme-toggle {
+width: 32px;
+height: 32px;
+border-radius: 10px;
+}
+
+h1 {
+font-size: 15px;
+}
+
+h2 {
+font-size: 16px;
+line-height: 1.2;
+}
+
+.eyebrow {
+font-size: 9px;
+margin-bottom: 1px;
+letter-spacing: .05em;
+}
+
+.panel,
+.hero-card,
+.filters-panel {
+padding: 10px;
+border-radius: 12px;
+gap: 8px;
+}
+
+.hero-text {
+font-size: 12px;
+margin-top: 4px;
+line-height: 1.4;
+}
+
+.metric-grid {
+gap: 8px;
+}
+
+.metric-card {
+padding: 10px;
+border-radius: 10px;
+gap: 4px;
+}
+
+.metric-card strong {
+font-size: 18px;
+}
+
+.metric-card span {
+font-size: 10px;
+}
+
+.field {
+gap: 2px;
+}
+
+.field label {
+font-size: 10px;
+}
+
+input, select, textarea {
+padding: 6px 8px;
+border-radius: 8px;
+font-size: 12px;
+min-height: 32px;
+}
+
 .actions {
 flex-direction: column;
 align-items: stretch;
-gap: 8px;
+gap: 6px;
 }
 
 .btn {
 width: 100%;
-padding: 10px 14px;
-min-height: 40px;
-font-size: 13px;
-border-radius: 10px;
-}
-
-.tiny-btn {
 padding: 6px 10px;
-min-height: 30px;
+min-height: 32px;
 font-size: 12px;
 border-radius: 8px;
 }
 
-/* Таблицы */
+.tiny-btn {
+padding: 4px 8px;
+min-height: 26px;
+font-size: 11px;
+border-radius: 6px;
+}
+
+.section-title-row {
+margin-bottom: 10px;
+}
+
 th, td {
-padding: 10px 8px;
-font-size: 12px;
+padding: 8px 6px;
+font-size: 11px;
 }
 
 th {
-font-size: 10px;
+font-size: 9px;
 }
 
-/* Блоки сводки и таймлайна */
+.summary-grid {
+gap: 8px;
+margin-bottom: 10px;
+}
+
 .summary-box, .timeline-item {
-padding: 10px;
-border-radius: 12px;
+padding: 8px;
+border-radius: 10px;
+gap: 6px;
+}
+
+.summary-box ul {
+gap: 6px;
 }
 
 .summary-box li {
-font-size: 12px;
+font-size: 11px;
+}
+
+.timeline {
+gap: 8px;
 }
 
 .timeline-head strong {
-font-size: 13px;
-}
-
-.timeline-meta {
-font-size: 11px;
-}
-
-.warning-box {
-padding: 10px;
-border-radius: 10px;
 font-size: 12px;
 }
 
-.count-pill {
-padding: 4px 8px;
+.timeline-meta {
+font-size: 10px;
+}
+
+.warning-box {
+margin-bottom: 8px;
+padding: 8px;
+border-radius: 8px;
 font-size: 11px;
+}
+
+.count-pill {
+padding: 2px 6px;
+font-size: 10px;
 }
 }
