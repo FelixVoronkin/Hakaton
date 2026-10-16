@@ -61,4 +61,80 @@ th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08
 .summary-box,.timeline-item{padding:14px;border-radius:18px;border:1px solid var(--line);background:var(--surface-2);display:grid;gap:8px}
 .summary-box ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .summary-box li{display:flex;justify-content:space-between;gap:10px;color:var(--muted)}
-.mini-title{font
+.mini-title{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.timeline{display:grid;gap:12px}
+.timeline-head{display:flex;justify-content:space-between;gap:12px}
+.timeline-head strong{font-size:15px}
+.timeline-meta{color:var(--muted);font-size:13px}
+.warning-box{margin:0 0 14px;padding:12px 14px;border-radius:14px;border:1px solid rgba(240,193,75,.35);background:rgba(240,193,75,.08);color:var(--yellow)}
+.theme-toggle{width:48px;height:48px;border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;flex-shrink:0}
+.hidden{display:none}
+
+.order-row-hidden {
+  display: none;
+}
+
+/* --- МОБИЛЬНЫЕ АДАПТАЦИИ И МЕДИԱ-ЗАПРОСЫ --- */
+
+@media (max-width: 1120px) {
+  .hero-card,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-form {
+    grid-template-columns: 1fr; /* Поля поиска выстраиваются в одну колонку друг под другом */
+  }
+  .metric-grid,
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .layout {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .topbar {
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn {
+    width: 100%; /* Кнопки растягиваются на всю ширину экрана на смартфонах */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+
+  .panel,
+  .hero-card,
+  .filters-panel {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  /* Смягчаем отступы и размеры для удобства тач-интерфейсов */
+  input, select, textarea {
+    padding: 12px;
+  }
+  
+  .metric-card strong {
+    font-size: 26px;
+  }
+}
